@@ -1,0 +1,387 @@
+@use "indexs" as *;
+
+body {
+  background-color: $darckblack;
+  > header {
+    margin-inline: auto;
+    max-width: 1240px;
+    max-height: 101px;
+    background-color: $darckblack;
+    display: flex;
+
+    @include tablet {
+      margin-left: 100px;
+      max-width: 1023px;
+      display: flex;
+      justify-content: center;
+    }
+    @include mobile {
+      margin-left: 200px;
+      max-width: 568px;
+      display: flex;
+      justify-content: center;
+    }
+    @include mobile2 {
+      margin-left: 300px;
+    }
+
+    > a {
+      text-decoration: none;
+      > h1 {
+        font-size: 25px;
+        margin-top: 42px;
+        width: 151px;
+        height: 54px;
+        color: $aqua;
+      }
+    }
+
+    > nav {
+      > ul {
+        display: flex;
+        font-size: 16px;
+        margin-left: 200px;
+
+        @include tablet {
+          font-size: 14px;
+          margin-left: 90px;
+        }
+        @include mobile {
+          font-size: 11px;
+          margin-left: 10px;
+        }
+
+        > li {
+          margin: 44px 40px;
+          transition: 1.2s;
+          @include tablet {
+            margin: 44px 30px;
+            width: 57px;
+          }
+          @include mobile {
+            width: 57px;
+            margin: 44px 20px;
+          }
+          > a {
+            text-decoration: none;
+            color: $white;
+          }
+          &:hover {
+            font-size: 29px;
+
+            @include tablet {
+              font-size: 24px;
+            }
+            @include mobile {
+              font-size: 15px;
+              width: 60px;
+            }
+          }
+        }
+      }
+    }
+  }
+  main {
+    .conteiner {
+      border-radius: 25px;
+      margin: 58px 100px 84px;
+      width: 1240px;
+      height: 675px;
+      background: url(../image/batumi.png);
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @include tablet {
+        width: 840px;
+        height: 475px;
+        margin-left: 50px;
+      }
+      @include mobile {
+        width: 740px;
+        height: 275px;
+      }
+      > div {
+        width: 721px;
+        height: 400px;
+        > h1 {
+          margin-left: 150px;
+          color: $aqua;
+          font-size: 64px;
+          @include tablet {
+            font-size: 44px;
+            margin-left: 220px;
+          }
+          @include mobile {
+            font-size: 27px;
+            margin-left: 280px;
+            padding-top: 50px;
+          }
+        }
+        > h2 {
+          margin-top: 70px;
+          font-size: 40px;
+          margin-left: 230px;
+          @include tablet {
+            font-size: 31px;
+            margin-left: 255px;
+          }
+          @include mobile {
+            font-size: 21px;
+            margin-left: 300px;
+            margin-top: 40px;
+          }
+
+          > a {
+            text-decoration: none;
+            color: $green;
+          }
+        }
+      }
+      .conteiner2 {
+        width: 750px;
+        height: 140px;
+        margin-top: 110px;
+        background-color: $black;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+
+        @include tablet {
+          width: 600px;
+          height: 110px;
+          margin-left: 100px;
+        }
+        @include mobile {
+          width: 550px;
+          height: 80px;
+          margin-top: 60px;
+          margin-left: 100px;
+        }
+
+        > div {
+          margin-left: 45px;
+          @include tablet {
+            margin-left: 30px;
+          }
+          @include mobile {
+            margin-left: 30px;
+            font-size: 12px;
+          }
+          > h1 {
+            font-size: 19px;
+            color: $white;
+            margin-bottom: 11px;
+            @include tablet {
+              font-size: 15px;
+            }
+            @include mobile {
+              font-size: 10px;
+            }
+          }
+          > input {
+            background-color: $black;
+            border-radius: 25px;
+            border: 2px solid $aqua;
+            width: 131px;
+            height: 35px;
+            padding-left: 17px;
+            color: $grey;
+
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+              margin: 0;
+              -moz-appearance: textfield;
+            }
+
+            @include tablet {
+              width: 100px;
+              height: 30px;
+              padding-left: 13px;
+            }
+            @include mobile {
+              width: 90px;
+              height: 25px;
+              padding-left: 10px;
+            }
+          }
+        }
+        > button {
+          margin-left: 30px;
+          margin-top: 17px;
+          background-color: $black;
+          border-radius: 25px;
+          border: 2px solid $aqua;
+          width: 100px;
+          height: 35px;
+          padding-left: 10px;
+          color: $grey;
+
+          @include mobile {
+            width: 70px;
+            height: 25px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    .conteiner3 {
+      width: 1019px;
+      height: 287px;
+      margin: 60px 200px;
+      display: flex;
+
+      @include tablet {
+        width: 800px;
+        margin: 60px 120px;
+      }
+      @include mobile{ 
+        margin:60px 80px   ; 
+      }
+
+      @include mobile {
+        width: 700px;
+        margin: 60px 100px;
+      }
+      .conteiner4 {
+        color: $white;
+
+        > a {
+
+          img { 
+            width: 151px;
+            height: 54px;
+          }
+          
+
+          @include tablet {
+            width: 121px;
+            height: 44px;
+          }
+
+          @include mobile {
+            width: 100px;
+            height: 36px;
+          }
+        }
+
+        .social {
+          color: $white;
+          font-size: 24px;
+          margin-top: 20px;
+
+          > img {
+            margin-left: 20px;
+            margin-top: 30px;
+          }
+        }
+      }
+      .conteiner5 {
+        color: $white;
+        margin-left: 160px;
+
+        @include tablet {
+          margin-left: 110px;
+        }
+        @include mobile {
+          margin-left: 80px;
+        }
+        h1 {
+          font-size: 32px;
+
+          @include tablet {
+            font-size: 26px;
+          }
+          @include mobile {
+            font-size: 22px;
+          }
+        }
+
+        ul {
+          margin-top: 25px;
+
+          li {
+            margin-top: 20px;
+            font-size: 16px;
+            display: flex;
+
+            @include tablet {
+              font-size: 14px;
+            }
+            @include mobile {
+              font-size: 12px;
+            }
+            img {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+
+      .conteiner6 {
+        color: $white;
+        margin-left: 160px;
+
+        @include tablet {
+          margin-left: 110px;
+        }
+        @include mobile {
+          margin-left: 80px;
+        }
+        h1 {
+          font-size: 32px;
+
+          @include tablet {
+            font-size: 26px;
+          }
+          @include mobile {
+            font-size: 22px;
+          }
+        }
+
+        input {
+          margin-top: 50px;
+          background-color: $black;
+          border-radius: 25px;
+          border: 2px solid $aqua;
+          width: 233px;
+          height: 50px;
+          padding-left: 17px;
+          color: $aqua;
+          @include tablet {
+            width: 200px;
+            height: 40px;
+          }
+          @include mobile {
+            width: 170px;
+            height: 40px;
+          }
+        }
+
+        button {
+          margin-top: 35px;
+          background-color: $black;
+          border-radius: 25px;
+          border: 2px solid $aqua;
+          width: 126px;
+          height: 50px;
+          padding-left: 17px;
+          color: $aqua;
+
+          @include tablet {
+            width: 106px;
+            height: 40px;
+          }
+          @include mobile {
+            width: 86px;
+
+            height: 40px;
+          }
+        }
+      }
+    }
+  }
+}

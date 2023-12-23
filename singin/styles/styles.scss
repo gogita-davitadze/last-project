@@ -1,0 +1,180 @@
+@use "index" as *;
+
+body {
+  background-color: $darckblack;
+  > header {
+    margin-inline: auto;
+    max-width: 1240px;
+    max-height: 101px;
+    background-color: $darckblack;
+    display: flex;
+
+    @include tablet {
+      margin-left: 100px;
+      max-width: 1023px;
+      display: flex;
+      justify-content: center;
+    }
+    @include mobile {
+      margin-left: 200px;
+      max-width: 568px;
+      display: flex;
+      justify-content: center;
+    }
+    @include mobile2 {
+      margin-left: 300px;
+    }
+
+    > a {
+      text-decoration: none;
+      > h1 {
+        font-size: 25px;
+        margin-top: 42px;
+        width: 151px;
+        height: 54px;
+        color: $aqua;
+      }
+    }
+
+    > nav {
+      > ul {
+        display: flex;
+        font-size: 16px;
+        margin-left: 200px;
+
+        @include tablet {
+          font-size: 14px;
+          margin-left: 90px;
+        }
+        @include mobile {
+          font-size: 11px;
+          margin-left: 10px;
+        }
+
+        > li {
+          margin: 44px 40px;
+          transition: 1.2s;
+          @include tablet {
+            margin: 44px 30px;
+            width: 57px;
+          }
+          @include mobile {
+            width: 57px;
+            margin: 44px 20px;
+          }
+          > a {
+            text-decoration: none;
+            color: $white;
+          }
+          &:hover {
+            font-size: 29px;
+
+            @include tablet {
+              font-size: 24px;
+            }
+            @include mobile {
+              font-size: 15px;
+              width: 60px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  
+  main {
+    display: flex;
+    justify-content: center;
+    background-image: url(../image/image.png);
+    height: 600px ;
+    background-size: cover;
+    margin-top: 20px;
+
+    @include tablet { 
+      width: 1023px ;
+      height: 550px ;
+    }
+    @include mobile { 
+      width: 768px ;
+      height: 500px ;
+    }
+   > .conteiner {
+      margin-top: 40px;
+     
+     > h1 {
+        margin-left: 50px ;
+        font-size: 66px;
+        color: $darckblack;
+        @include tablet { 
+           font-size: 59px ;
+        }
+        @include mobile { 
+         font-size: 53px ;
+         margin-left: 35px ;
+        }
+      }
+
+      ul {
+        li {
+          input {
+            margin-top: 40px;
+            background-color: $black;
+            border-radius: 25px;
+            border: 2px solid $aqua;
+            width: 300px;
+            height: 60px;
+            padding-left: 17px;
+            color: $aqua;
+            font-size: 20px;
+            @include tablet { 
+              width:250px  ;
+              height:50px  ;
+            }
+            @include mobile { 
+              width: 200px ;
+              height: 40px ;
+            }
+          }
+
+          button  {
+            margin-left: 100px ;
+            margin-top: 40px;
+            background-color: $black;
+            border-radius: 25px;
+            border: 2px solid $aqua;
+            width: 100px;
+            height: 30px;
+            padding-left: 10px;
+            color: $aqua;
+            font-size: 15px;
+            @include tablet { 
+              margin-left: 80px;
+            }
+            @include mobile { 
+              margin-left: 50px ;
+            }
+          }
+          h1 { 
+              margin-top: 30px ;
+              margin-left: 50px ;
+
+              @include tablet { 
+                margin-left: 40px ;
+              }
+              @include mobile { 
+                  margin-left: 20px ;
+              }
+          
+            a{ 
+               text-decoration: none;
+               font-size: 30px ;
+               color: $darckblack;
+            }
+          }
+        }
+      }
+    }
+  }
+}

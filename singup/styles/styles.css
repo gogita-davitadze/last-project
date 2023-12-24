@@ -269,6 +269,12 @@ body main {
     width: 768px;
     height: 500px;
   }
+  @media (max-width: 490px) {
+    body main {
+      width: 620px ;
+      height: 450px;
+    }
+  }
 }
 body main .conteiner {
   margin-top: 40px;

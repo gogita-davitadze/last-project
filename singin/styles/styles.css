@@ -271,7 +271,7 @@ body main {
   }
   @media (max-width: 490px) {
     body main {
-      width: 480px ;
+      width: 620px ;
       height: 450px;
     }
   }
